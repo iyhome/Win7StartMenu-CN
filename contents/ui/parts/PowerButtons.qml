@@ -31,7 +31,7 @@ FocusScope {
     readonly property var actions: [
         { text: i18n("Restart"),        icon: "system-reboot",            type: "restart",
           command: "qdbus6 org.kde.Shutdown /Shutdown logoutAndReboot || systemctl reboot" },
-        { text: i18n("Turn Off Screen"), icon: "video-display",           type: "screen_off",
+        { text: i18n("Turn Off Screen"), icon: "monitor-symbolic",        type: "screen_off",
           command: "kscreen-doctor --dpms off" },
         { text: i18n("Lock Screen"),    icon: "system-lock-screen",       type: "lock",
           command: "loginctl lock-session || qdbus org.kde.kscreenlocker /ScreenSaver Lock" },
@@ -200,6 +200,8 @@ FocusScope {
 
                         Kirigami.Icon {
                             source: modelData.icon
+                            isMask: true
+                            color: Kirigami.Theme.textColor
                             Layout.preferredWidth: Kirigami.Units.iconSizes.small
                             Layout.preferredHeight: Kirigami.Units.iconSizes.small
                         }

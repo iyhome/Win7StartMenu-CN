@@ -12,6 +12,7 @@ import org.kde.kirigami as Kirigami
 
 import "functions" as Functions
 import "code/tools.js" as Tools
+import "code/pinyin.js" as Pinyin
 
 // Flat All Programs list grouped by the first character of every entry, with a
 // Windows 10 style letter header in front of each group.
@@ -50,12 +51,10 @@ FocusScope {
     onSourceModelChanged: Qt.callLater(rebuild)
     Component.onCompleted: Qt.callLater(rebuild)
 
-    // Latin letters keep their own group; everything else shares "#".
+    // Latin letters use themselves, Han characters use their pinyin initial,
+    // anything else shares "#".
     function sectionOf(text) {
-        const trimmed = (text || "").trim();
-        if (trimmed === "") return "#";
-        const first = trimmed.charAt(0).toUpperCase();
-        return /[A-Z]/.test(first) ? first : "#";
+        return Pinyin.initialOf(text);
     }
 
     // A-Z first, then "#", so every section stays contiguous in the ListView.
