@@ -51,10 +51,8 @@ Item {
     }
 
     // The original menu is 254 px of application list against 139 px of side panel.
-    // The list is narrowed a little so the pinned/recent entries feel tighter and
-    // the side panel gets the extra room.
-    readonly property real listColumnRatio: 230 / 393
-    readonly property real sideColumnRatio: 163 / 393
+    readonly property real listColumnRatio: 254 / 393
+    readonly property real sideColumnRatio: 139 / 393
 
     SidePanelModels { id: sidePanelModels }
 
