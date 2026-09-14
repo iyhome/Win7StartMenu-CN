@@ -33,6 +33,17 @@ FocusScope {
 
     property var actionOwner: null
 
+    // First model row of every section, filled in by rebuild(). Used both to
+    // enable the matching letter button and to jump to it.
+    property var sectionStart: ({})
+
+    readonly property var letterButtons: {
+        const letters = [];
+        for (let i = 0; i < 26; i++) letters.push(String.fromCharCode(65 + i));
+        if (view.sectionStart["#"] !== undefined) letters.push("#");
+        return letters;
+    }
+
     ListModel {
         id: groupedModel
         dynamicRoles: true
@@ -95,6 +106,27 @@ FocusScope {
         });
 
         for (var j = 0; j < rows.length; j++) groupedModel.append(rows[j]);
+
+        var starts = {};
+        for (var k = 0; k < rows.length; k++) {
+            if (starts[rows[k].section] === undefined) starts[rows[k].section] = k;
+        }
+        view.sectionStart = starts;
+    }
+
+    function jumpToSection(letter) {
+        const index = view.sectionStart[letter];
+        if (index === undefined) return;
+        listView.currentIndex = index;
+        listView.positionViewAtIndex(index, ListView.Beginning);
+        listView.forceActiveFocus();
+    }
+
+    function openLetterIndex(header) {
+        letterOverlay.visible = true;
+        const point = header.mapToItem(view, 0, header.height);
+        letterPanel.x = Math.max(0, Math.min(point.x, view.width - letterPanel.width));
+        letterPanel.y = Math.max(0, Math.min(point.y, view.height - letterPanel.height));
     }
 
     function focusFirst() {
@@ -149,9 +181,14 @@ FocusScope {
             section.property: "section"
             section.criteria: ViewSection.FullString
             section.delegate: PlasmaExtras.ListSectionHeader {
+                id: sectionHeader
                 required property string section
                 width: listView.width
                 label: section
+                // Keep the whole list on integer coordinates so the icons below
+                // are not rendered at a half pixel and blurred.
+                height: Math.round(implicitHeight)
+                onClicked: view.openLetterIndex(sectionHeader)
             }
 
             delegate: Item {
@@ -178,10 +215,11 @@ FocusScope {
 
                 Kirigami.Icon {
                     id: appIcon
-                    anchors.left: parent.left
-                    anchors.leftMargin: Kirigami.Units.smallSpacing * 2
-                    anchors.verticalCenter: parent.verticalCenter
-                    width: view.iconSize
+                    // Integer position and size so the icon is not resampled at
+                    // a half pixel and blurred.
+                    x: Math.round(Kirigami.Units.smallSpacing * 2)
+                    y: Math.round((appItem.height - height) / 2)
+                    width: Math.round(view.iconSize)
                     height: width
                     animated: false
                     source: appItem.decoration
@@ -238,6 +276,62 @@ FocusScope {
             Keys.onLeftPressed: event => { event.accepted = true; view.exitLeft(); }
             Keys.onReturnPressed: event => { event.accepted = true; view.activateCurrent(); }
             Keys.onEnterPressed: event => { event.accepted = true; view.activateCurrent(); }
+        }
+    }
+
+    // Windows 10 style index: clicking a section header opens the whole
+    // alphabet and picking a letter scrolls to that section. It is drawn as an
+    // in-scene overlay rather than a Popup, because a separate window would
+    // make the applet popup lose focus and close.
+    Item {
+        id: letterOverlay
+        anchors.fill: parent
+        visible: false
+        z: 1000
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: letterOverlay.visible = false
+        }
+
+        Rectangle {
+            id: letterPanel
+
+            readonly property real innerPadding: Kirigami.Units.smallSpacing
+
+            width: letterGrid.width + innerPadding * 2
+            height: letterGrid.height + innerPadding * 2
+            radius: Kirigami.Units.smallSpacing
+            color: Kirigami.Theme.backgroundColor
+            border.width: 1
+            border.color: Qt.rgba(Kirigami.Theme.textColor.r,
+                                  Kirigami.Theme.textColor.g,
+                                  Kirigami.Theme.textColor.b, 0.3)
+
+            Grid {
+                id: letterGrid
+                anchors.centerIn: parent
+                columns: 6
+                spacing: Kirigami.Units.smallSpacing
+
+                Repeater {
+                    model: view.letterButtons
+
+                    delegate: PlasmaComponents3.Button {
+                        required property string modelData
+
+                        text: modelData
+                        enabled: view.sectionStart[modelData] !== undefined
+                        implicitWidth: Kirigami.Units.gridUnit * 1.7
+                        implicitHeight: Kirigami.Units.gridUnit * 1.7
+
+                        onClicked: {
+                            view.jumpToSection(modelData);
+                            letterOverlay.visible = false;
+                        }
+                    }
+                }
+            }
         }
     }
 }
