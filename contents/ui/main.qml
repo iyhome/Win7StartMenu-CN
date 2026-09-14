@@ -75,10 +75,10 @@ PlasmoidItem {
     fullRepresentation: Item {
         id: root
 
-        Layout.minimumWidth: Kirigami.Units.gridUnit * 20
-        Layout.maximumWidth: Kirigami.Units.gridUnit * 20
+        Layout.minimumWidth: Kirigami.Units.gridUnit * 22
+        Layout.maximumWidth: Kirigami.Units.gridUnit * 22
         Layout.minimumHeight: Kirigami.Units.gridUnit * 36
-        Layout.preferredWidth: Kirigami.Units.gridUnit * 20
+        Layout.preferredWidth: Kirigami.Units.gridUnit * 22
         Layout.preferredHeight: Kirigami.Units.gridUnit * 34
 
         property int showApps: 0

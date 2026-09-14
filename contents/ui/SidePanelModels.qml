@@ -62,7 +62,7 @@ Item {
             name: "Music",
             itemText: i18n("Music"),
             description: i18n("Play music and other audio files."),
-            itemIcon: "library-music",
+            itemIcon: "folder-music",
             itemIconFallback: "folder-music",
             executableString: StandardPaths.writableLocation(StandardPaths.MusicLocation),
             menuModel: null,

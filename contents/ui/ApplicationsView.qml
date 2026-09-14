@@ -34,8 +34,7 @@ Item {
             treeView.currentIndex = 0;
             treeView.forceActiveFocus();
         } else {
-            flatView.currentIndex = 0;
-            flatView.forceActiveFocus();
+            flatView.focusFirst();
         }
     }
 
@@ -67,20 +66,19 @@ Item {
             onExitLeft: appsView.exitLeft()
         }
 
-        ItemGridView {
+        GroupedAppsView {
             id: flatView
             Layout.fillWidth: true
             Layout.fillHeight: true
             visible: !appsView.hierarchical
             enabled: visible
-            model: appsView.flatModel
-            cellWidth: width
+            sourceModel: appsView.flatModel
             cellHeight: appsView.cellHeight
             iconSize: appsView.iconSize
 
-            onKeyNavUp: appsView.exitTop()
-            onKeyNavDown: appsView.exitBottom()
-            onKeyNavLeft: appsView.exitLeft()
+            onExitTop: appsView.exitTop()
+            onExitBottom: appsView.exitBottom()
+            onExitLeft: appsView.exitLeft()
         }
     }
 }
