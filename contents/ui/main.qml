@@ -32,7 +32,8 @@ PlasmoidItem {
     property QtObject globalFavorites: rootModel ? rootModel.favoritesModel : null
     property QtObject systemFavorites: rootModel ? rootModel.systemFavoritesModel : null
 
-    readonly property bool hierarchical: Plasmoid.configuration.hierarchicalAllPrograms
+    // All Programs is always a single flat alphabetical list, never a category tree.
+    readonly property bool hierarchical: false
 
     // Every search source reads the query from here, so the sections below the
     // search bar always answer the same text.
@@ -522,8 +523,7 @@ PlasmoidItem {
         flat: true
         appletInterface: kicker
 
-        // Hierarchical mode keeps the category rows so they can be expanded in
-        // place; flat mode collapses everything into one alphabetical list.
+        // All Programs is a single alphabetical list with no category rows.
         sorted: !kicker.hierarchical
         showSeparators: !kicker.hierarchical
         showTopLevelItems: kicker.hierarchical
@@ -554,7 +554,6 @@ PlasmoidItem {
     Connections {
         target: Plasmoid.configuration
 
-        function onHierarchicalAllProgramsChanged() { rootModel.refresh(); }
         function onHiddenApplicationsChanged() { rootModel.refresh(); }
         function onFavoriteSystemActionsChanged() {
             if (systemFavorites) systemFavorites.favorites = Plasmoid.configuration.favoriteSystemActions;

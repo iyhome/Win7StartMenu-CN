@@ -1,5 +1,6 @@
 [Desktop Entry]
-Name=Windows7StartMenu4KDE
+Name=Windows 7 Start Menu CN
+Name[zh_CN]=Windows 7 开始菜单 CN
 
 Type=Service
 Icon=start-here-kde
@@ -7,6 +8,6 @@ X-KDE-ServiceTypes=Plasma/Applet
 
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/main.qml
-X-KDE-PluginInfo-Name=Windows7StartMenu4KDE
+X-KDE-PluginInfo-Name=win7startmenu-cn
 
 X-KDE-PluginInfo-Version=1.3.0

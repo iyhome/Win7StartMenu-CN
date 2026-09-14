@@ -9,12 +9,11 @@ import QtQuick.Layouts
 import org.kde.plasma.plasmoid 2.0
 import org.kde.kirigami as Kirigami
 
-// All Programs. Hierarchical mode browses the category tree in place, flat mode
-// keeps the single alphabetical list the menu used before.
+// All Programs. Always a single flat alphabetical list, never a category tree.
 Item {
     id: appsView
 
-    property bool hierarchical: Plasmoid.configuration.hierarchicalAllPrograms
+    property bool hierarchical: false
     property var flatModel: null
     property var treeModel: null
     property int iconSize: 32

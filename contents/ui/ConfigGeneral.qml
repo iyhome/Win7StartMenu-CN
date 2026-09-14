@@ -25,9 +25,7 @@ KCM.SimpleKCM {
     property alias cfg_useWindowsOrb: useWindowsOrb.checked
     property alias cfg_orbWidth: orbWidth.value
     property alias cfg_useWindowsIcons: useWindowsIcons.checked
-    property alias cfg_useGenericIcons: useGenericIcons.checked
 
-    property alias cfg_hierarchicalAllPrograms: hierarchicalAllPrograms.checked
     property alias cfg_highlightNewApps: highlightNewApps.checked
     property alias cfg_showFavoritesFirst: showFavoritesFirst.checked
 
@@ -162,20 +160,9 @@ KCM.SimpleKCM {
             text: i18n("Prefer Windows style icons in the side panel")
         }
 
-        CheckBox {
-            id: useGenericIcons
-            text: i18n("Draw application categories with a plain folder icon")
-        }
-
         Item { Kirigami.FormData.isSection: true }
 
         // ---- All Programs -------------------------------------------------
-
-        CheckBox {
-            id: hierarchicalAllPrograms
-            Kirigami.FormData.label: i18n("All Programs:")
-            text: i18n("Browse categories as an expandable tree")
-        }
 
         CheckBox {
             id: highlightNewApps

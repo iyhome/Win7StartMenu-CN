@@ -4,11 +4,11 @@ With KDE Frameworks v5.37 and above, translations are bundled with the `*.plasmo
 
 ## Install Translations
 
-Go to `~/.local/share/plasma/plasmoids/Windows7StartMenu4KDE/translate/` and run `sh ./build --restartplasma`.
+Go to `~/.local/share/plasma/plasmoids/win7startmenu-cn/translate/` and run `sh ./build --restartplasma`.
 
 ## New Translations
 
-1. Fill out [`template.pot`](template.pot) with your translations then open a [new issue](https://github.com/walterdemacedorodrigues/Windows7StartMenu4KDE/issues/new), name the file `spanish.txt`, attach the txt file to the issue (drag and drop).
+1. Fill out [`template.pot`](template.pot) with your translations then open a [new issue](https://github.com/iyhome/Win7StartMenu-CN/issues/new), name the file `spanish.txt`, attach the txt file to the issue (drag and drop).
 
 Or if you know how to make a pull request
 
@@ -45,3 +45,4 @@ Or if you know how to make a pull request
 | pt_BR    |   92/93 |   98% |
 | ru       |   92/93 |   98% |
 | tr       |   92/93 |   98% |
+| zh_CN    | 115/115 |  100% |

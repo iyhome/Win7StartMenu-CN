@@ -1,0 +1,478 @@
+# Translation of Win7StartMenu-CN in zh_CN
+# Copyright (C) 2026
+# This file is distributed under the same license as the Win7StartMenu-CN package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Win7StartMenu-CN\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-30 13:31-0300\n"
+"PO-Revision-Date: 2026-09-14 00:00+0800\n"
+"Last-Translator: \n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../metadata.desktop
+msgid "Windows 7 Start Menu CN"
+msgstr "Windows 7 开始菜单 CN"
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "常规"
+
+#: ../contents/config/config.qml
+msgid "Appearance"
+msgstr "外观"
+
+#: ../contents/config/config.qml
+msgid "Search"
+msgstr "搜索"
+
+#: ../contents/config/config.qml
+msgid "Side Panel"
+msgstr "侧边栏"
+
+#: ../contents/ui/code/tools.js ../contents/ui/parts/FavoritesRow.qml
+msgid "Remove from Favorites"
+msgstr "从收藏夹中移除"
+
+#: ../contents/ui/code/tools.js ../contents/ui/parts/RecentsRow.qml
+msgid "Add to Favorites"
+msgstr "添加到收藏夹"
+
+#: ../contents/ui/code/tools.js
+msgid "On All Activities"
+msgstr "在所有活动中"
+
+#: ../contents/ui/code/tools.js
+msgid "On the Current Activity"
+msgstr "在当前活动中"
+
+#: ../contents/ui/code/tools.js
+msgid "Show in Favorites"
+msgstr "在收藏夹中显示"
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "A tint is painted over the theme background. At zero the theme is left untouched, and at one hundred the area is solid."
+msgstr "在主题背景上叠加一层着色。数值为 0 时保持主题原样，为 100 时该区域为纯色。"
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "Whole menu opacity:"
+msgstr "整个菜单不透明度："
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "Theme default"
+msgstr "主题默认"
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "Use the theme background colour"
+msgstr "使用主题背景色"
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "Menu colour:"
+msgstr "菜单颜色："
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "Application list opacity:"
+msgstr "应用程序列表不透明度："
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "Application list colour:"
+msgstr "应用程序列表颜色："
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "Side panel opacity:"
+msgstr "侧边栏不透明度："
+
+#: ../contents/ui/ConfigAppearance.qml
+msgid "Side panel colour:"
+msgstr "侧边栏颜色："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "System icon:"
+msgstr "系统图标："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "选择…"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Clear Icon"
+msgstr "清除图标"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Use the Windows orb instead of a system icon"
+msgstr "使用 Windows 圆球代替系统图标"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Orb texture:"
+msgstr "圆球贴图："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Orb width:"
+msgstr "圆球宽度："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Texture size"
+msgstr "贴图尺寸"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Icons:"
+msgstr "图标："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Prefer Windows style icons in the side panel"
+msgstr "侧边栏优先使用 Windows 风格图标"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Highlight newly installed applications"
+msgstr "高亮新安装的应用程序"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show favorites before recently used applications"
+msgstr "在最近使用的应用程序之前显示收藏夹"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Recents:"
+msgstr "最近使用："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Show recently used applications"
+msgstr "显示最近使用的应用程序"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Applications listed:"
+msgstr "列出的应用程序数量："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Documents per jump list:"
+msgstr "每个跳转列表的文档数："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Flyout hover delay:"
+msgstr "弹出菜单悬停延迟："
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Label the home entry with the full user name"
+msgstr "用完整用户名标注主文件夹条目"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Search browser bookmarks as well as applications"
+msgstr "同时搜索浏览器书签和应用程序"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "Unhide all hidden applications"
+msgstr "取消隐藏所有已隐藏的应用程序"
+
+#: ../contents/ui/ConfigGeneral.qml
+msgid "All applications are visible again."
+msgstr "所有应用程序已重新可见。"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Sections:"
+msgstr "分区："
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Show recently opened documents that match"
+msgstr "显示匹配的最近打开文档"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Show an extended search section for files"
+msgstr "显示文件的扩展搜索分区"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Engine:"
+msgstr "引擎："
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Same tool as Dolphin (kio-filenamesearch-grep)"
+msgstr "与 Dolphin 相同的工具 (kio-filenamesearch-grep)"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "fd"
+msgstr "fd"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "find"
+msgstr "find"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "plocate index"
+msgstr "plocate 索引"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "KDE default (Baloo file search)"
+msgstr "KDE 默认 (Baloo 文件搜索)"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Uses the baloosearch runner, which needs file indexing enabled in System Settings."
+msgstr "使用 baloosearch 运行器，需要在系统设置中启用文件索引。"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Type \"fd\", \"find\" or \"pl\" before the query to override the engine for a single search."
+msgstr "在查询前输入 \"fd\"、\"find\" 或 \"pl\" 可为单次搜索覆盖引擎。"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Search in:"
+msgstr "搜索范围："
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "No folder added: the home directory is searched."
+msgstr "未添加文件夹：将搜索主目录。"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Add folder…"
+msgstr "添加文件夹…"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Order matters: the time budget is spent from the top down, so put fast disks first."
+msgstr "顺序很重要：时间预算从上往下消耗，因此请将快速磁盘放在前面。"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Result limit:"
+msgstr "结果上限："
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Time budget:"
+msgstr "时间预算："
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "%1 second"
+msgid_plural "%1 seconds"
+msgstr[0] "%1 秒"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Whatever the tool has already found when the budget runs out is shown; the rest is dropped."
+msgstr "当时间预算耗尽时，显示该工具已找到的结果；其余结果将被丢弃。"
+
+#: ../contents/ui/ConfigSearch.qml
+msgid "Add a folder to search"
+msgstr "添加要搜索的文件夹"
+
+#: ../contents/ui/ConfigSidepanel.qml
+msgid "Places"
+msgstr "位置"
+
+#: ../contents/ui/ConfigSidepanel.qml
+msgid "Libraries"
+msgstr "库"
+
+#: ../contents/ui/ConfigSidepanel.qml
+msgid "System"
+msgstr "系统"
+
+#: ../contents/ui/functions/GetRecentFiles.qml
+msgid "Recent Files"
+msgstr "最近的文件"
+
+#: ../contents/ui/functions/GetRecentFiles.qml
+msgid "No recent items"
+msgstr "没有最近的项目"
+
+#: ../contents/ui/main.qml
+msgid "Edit Applications…"
+msgstr "编辑应用程序…"
+
+#: ../contents/ui/main.qml
+msgid "All Applications"
+msgstr "所有程序"
+
+#: ../contents/ui/main.qml
+msgid "Favorites"
+msgstr "收藏夹"
+
+#: ../contents/ui/main.qml
+msgid "Programs"
+msgstr "程序"
+
+#: ../contents/ui/main.qml
+msgid "Recent"
+msgstr "最近"
+
+#: ../contents/ui/main.qml
+msgid "Extended search"
+msgstr "扩展搜索"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/parts/SearchBar.qml
+msgid "Type here to search…"
+msgstr "在此处输入以搜索…"
+
+#: ../contents/ui/OrbPicker.qml
+msgid "PNG images (*.png)"
+msgstr "PNG 图像 (*.png)"
+
+#: ../contents/ui/OrbPicker.qml
+msgid "ClassicShell and OpenShell orb textures are supported. The image must stack the normal, hovered and pressed frames vertically."
+msgstr "支持 ClassicShell 和 OpenShell 圆球贴图。图像必须垂直堆叠正常、悬停和按下三种状态的帧。"
+
+#: ../contents/ui/OrbPicker.qml
+msgctxt "@item:inmenu Open file chooser dialog"
+msgid "Choose…"
+msgstr "选择…"
+
+#: ../contents/ui/OrbPicker.qml
+msgctxt "@item:inmenu Reset to the bundled orb"
+msgid "Reset"
+msgstr "重置"
+
+#: ../contents/ui/parts/PersonalPortrait.qml
+msgid "User Settings"
+msgstr "用户设置"
+
+#: ../contents/ui/parts/PersonalPortrait.qml
+msgid "Click to open user account settings"
+msgstr "点击打开用户账户设置"
+
+#: ../contents/ui/parts/PowerButtons.qml
+msgid "Restart"
+msgstr "重启"
+
+#: ../contents/ui/parts/PowerButtons.qml
+msgid "Turn Off Screen"
+msgstr "关闭屏幕"
+
+#: ../contents/ui/parts/PowerButtons.qml
+msgid "Lock Screen"
+msgstr "锁定屏幕"
+
+#: ../contents/ui/parts/PowerButtons.qml
+msgid "Sleep"
+msgstr "睡眠"
+
+#: ../contents/ui/parts/PowerButtons.qml
+msgid "Hibernate"
+msgstr "休眠"
+
+#: ../contents/ui/parts/PowerButtons.qml
+msgid "Log Out"
+msgstr "注销"
+
+#: ../contents/ui/parts/PowerButtons.qml
+msgid "Shutdown"
+msgstr "关机"
+
+#: ../contents/ui/parts/PowerButtons.qml
+msgid "Closes all open programs, shuts down the system and turns off your computer."
+msgstr "关闭所有打开的程序、关闭系统并关闭计算机。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Open your personal folder."
+msgstr "打开您的个人文件夹。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Documents"
+msgstr "文档"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Access letters, reports, notes and other kinds of documents."
+msgstr "访问信件、报告、笔记和其他类型的文档。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Pictures"
+msgstr "图片"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "View and organize digital pictures."
+msgstr "查看和整理数字图片。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Music"
+msgstr "音乐"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Play music and other audio files."
+msgstr "播放音乐和其他音频文件。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Videos"
+msgstr "视频"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Watch home movies and other digital videos."
+msgstr "观看家庭影片和其他数字视频。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Downloads"
+msgstr "下载"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Find Internet downloads and links to favorite websites."
+msgstr "查找互联网下载内容和收藏网站的链接。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Games"
+msgstr "游戏"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Play and manage games on your computer."
+msgstr "在计算机上玩和管理游戏。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Recent Items"
+msgstr "最近使用的项目"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Open documents you worked on recently."
+msgstr "打开您最近处理的文档。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Computer"
+msgstr "计算机"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "See the disk drives and other hardware connected to your computer."
+msgstr "查看连接到计算机的磁盘驱动器和其他硬件。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Network"
+msgstr "网络"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Access the computers and devices that are on your network."
+msgstr "访问网络上的计算机和设备。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Control Panel"
+msgstr "控制面板"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Change settings and customize the functionality of your computer."
+msgstr "更改设置并自定义计算机的功能。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Devices and Printers"
+msgstr "设备和打印机"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "View and manage devices, printers and print jobs."
+msgstr "查看和管理设备、打印机和打印作业。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Default Programs"
+msgstr "默认程序"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Choose default programs for web browsing, e-mail and other activities."
+msgstr "选择用于网页浏览、电子邮件和其他活动的默认程序。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Help and Support"
+msgstr "帮助和支持"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Find help topics, tutorials, troubleshooting and other support services."
+msgstr "查找帮助主题、教程、疑难解答和其他支持服务。"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Run…"
+msgstr "运行…"
+
+#: ../contents/ui/SidePanelModels.qml
+msgid "Open a program, folder, document or web site."
+msgstr "打开程序、文件夹、文档或网站。"

@@ -48,10 +48,6 @@
       <default>false</default>
     </entry>
 
-    <entry name="hierarchicalAllPrograms" type="Bool">
-      <label>Browse All Programs as an expandable category tree.</label>
-      <default>true</default>
-    </entry>
     <entry name="highlightNewApps" type="Bool">
       <default>true</default>
     </entry>
