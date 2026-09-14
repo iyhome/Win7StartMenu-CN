@@ -364,7 +364,7 @@ PlasmoidItem {
                             id: allAppsButton
                             anchors.fill: parent
                             text: root.showApps === 0 ? i18n("All Applications") : i18n("Favorites")
-                            icon.name: root.showApps === 0 ? "application-menu-symbolic" : "bookmarks-symbolic"
+                            icon.name: root.showApps === 0 ? "view-list-details-symbolic" : "bookmarks-symbolic"
                             icon.width: Kirigami.Units.iconSizes.smallMedium
                             icon.height: Kirigami.Units.iconSizes.smallMedium
                             activeFocusOnTab: true
