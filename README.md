@@ -1,4 +1,4 @@
-# Windows 7 Start Menu CN (Win7StartMenu-CN)
+# Win7 开始菜单 (Win7StartMenu-CN)
 
 一个忠实还原经典 **Windows 7 开始菜单** 的 KDE Plasma 6 小部件（Plasmoid），内置 **简体中文翻译**，并将「所有程序」改为 **扁平列表**（不再有分类文件夹）。
 
