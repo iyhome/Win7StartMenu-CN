@@ -82,7 +82,7 @@ Item {
             topMargin: Kirigami.Units.gridUnit
             horizontalCenter: parent.horizontalCenter
         }
-        placeholderText: i18n("Type here to search…")
+        placeholderText: ""
         visible: false
 
         onTextChanged: contentRoot.searchTextChanged(text)

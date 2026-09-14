@@ -439,7 +439,7 @@ msgstr "访问网络上的计算机和设备。"
 
 #: ../contents/ui/SidePanelModels.qml
 msgid "Control Panel"
-msgstr "控制面板"
+msgstr "设置"
 
 #: ../contents/ui/SidePanelModels.qml
 msgid "Change settings and customize the functionality of your computer."

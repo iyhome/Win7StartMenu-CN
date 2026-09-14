@@ -363,7 +363,7 @@ PlasmoidItem {
                             id: allAppsButton
                             anchors.fill: parent
                             text: root.showApps === 0 ? i18n("All Applications") : i18n("Favorites")
-                            icon.name: root.showApps === 0 ? "applications-all" : "bookmarks"
+                            icon.name: root.showApps === 0 ? "applications-all-symbolic" : "bookmarks-symbolic"
                             activeFocusOnTab: true
                             background: Item {}
 

@@ -119,6 +119,10 @@ Item {
         Kirigami.Icon {
             source: sidePanelItem.resolvedIcon
             fallback: sidePanelItem.itemIconFallback
+            // Keep every side panel entry on the same monochrome symbolic look
+            // as the All Programs / Favorites button.
+            isMask: true
+            color: Kirigami.Theme.textColor
             Layout.preferredWidth: Kirigami.Units.iconSizes.small
             Layout.preferredHeight: Kirigami.Units.iconSizes.small
         }
